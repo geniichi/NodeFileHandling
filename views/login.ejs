@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        h1 {color:white;}
+        body {background-image:linear-gradient( to right,blue,violet);
+            display:flex;justify-content: center;align-items: center;flex-direction: column;}
+        form {width:350px;height:400px;padding:50px;background-color: rgb(255, 255, 255);border-radius:5px;
+        display:flex;align-items: center;flex-direction: column;}
+        .separator {margin: 20px auto;width:300px;}
+        label {font-size: 15px;margin-bottom:50px;}
+        input {width:300px;height:25px;}
+        #button {width:150px;height:50px;background-image:linear-gradient(to bottom right, blue, violet, orange);
+            border:none;border-radius:40px;color:white;font-size:15px;
+        margin-top:50px;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <br>
+    <form action="/info" method="post">
+        <div class="separator">
+            <label for="fname">Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required><br>
+        </div>
+        <div class="separator">
+            <label for="lname" required>Password:</label><br>
+            <input type="number" id="pass" name="pass" min="1"><br><br>
+        </div>
+        <input type="submit" value="Submit" id="button">
+    </form>
+</body>
+</html>
